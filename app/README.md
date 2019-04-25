@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Pre Requisitos
+
+Primero necesitamos lo usual para trabajar con proyectos de `nodejs` en Linux basado en **debian** (agregue `sudo` si es necesario antes de cada linea, VSCode opcional)
+
+```
+apt-get install git code nodejs
+```
+
+Para installar individualmente nodejs puede visitar https://github.com/nodesource/distributions/blob/master/README.md
+
+Algo muy importante es tener internet activo en el momento de correr la aplicaccion pues necesitamos datos de un par de APIs online. Tambien un navegador web que soporte los ultimos features de HTML5 como Chrome/Chromium o Firefox, donde podra acceder a las opciones de desarrollador asi como el plugin de react usando `ctl+i`.
+
+Algunas extensiones utiles en VSCode (en mi opinion) son 
+
+* ES7 React/Redux/GraphQL/React-Native snippets
+* npm Intellisense
+* exports autocomplete
+* Path Autocomplete
+* Auto Complete Tag
+
+
 ## Available Scripts
 
 In the project directory, you can run:
