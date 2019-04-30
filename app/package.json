@@ -1,5 +1,5 @@
 {
-  "name": "react-saas-ecomerce-starter",
+  "name": "react-saas-ecommerce-starter",
   "version": "0.1.0",
   "private": true,
   "author": "Israel-Laguan <https://github.com/Israel-Laguan>",
@@ -9,11 +9,14 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@okta/okta-react": "^1.2.0",
     "axios": "^0.18.0",
+    "grommet": "^2.6.6",
+    "grommet-icons": "^4.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "typeface-clear-sans": "0.0.44"
   },
   "scripts": {
     "start": "react-scripts start",

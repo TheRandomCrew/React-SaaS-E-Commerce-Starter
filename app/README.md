@@ -20,6 +20,14 @@ Algunas extensiones utiles en VSCode (en mi opinion) son
 * Path Autocomplete
 * Auto Complete Tag
 
+### Adding fonts
+
+visit [typefonts-repo](https://github.com/KyleAMathews/typefaces), choose your font, then
+
+`npm i typeface-<your font name here>`, for example `npm i typeface-clear-sans`
+
+Then, in `index.js` you can add the font, for example: 
+`import 'typeface-clear-sans';`
 
 ## Available Scripts
 
