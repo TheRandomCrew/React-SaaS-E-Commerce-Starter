@@ -5,6 +5,7 @@ import { useAuth } from '../router/auth';
 import { theme } from '../style/globalTheme';
 import AppHeader from './Nav/visual/AppHeader';
 import Sidebar from './Sidebar/Sidebar';
+import Footer from './Footer/Footer';
 
 const PageWrapper = withAuth(({ auth, children=undefined }) => {
     const [sidebar, setSidebar] = React.useState(false)
@@ -42,8 +43,8 @@ const PageWrapper = withAuth(({ auth, children=undefined }) => {
                         {children}
                     </Box>
                 </Box>
-                <Box tag="footer" pad="small" background="dark-1">
-                    footer
+                <Box tag="footer" pad="0" margin='0' background="dark-1">
+                    <Footer/>
           </Box>
             </Grid>
         </Grommet>
