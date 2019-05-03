@@ -7,22 +7,23 @@ import Dashboard from '../page/Dashboard/Dashboard';
 import Main from '../page/Main/Main';
 import About from '../page/About/About';
 import Features from '../page/Features/Features';
+import PageWrapper from '../component/PageWrapper';
 
 const AppRouter = () => (
-    <Router>
+  <Router>
     <Security
       issuer={`${process.env.REACT_APP_OKTA_ORG_URL}/oauth2/default`}
       client_id={process.env.REACT_APP_OKTA_CLIENT_ID}
       redirect_uri={`${window.location.origin}/implicit/callback`}
     >
-      <Route path="/" exact component={Main} />
-      <Route path="/about" exact component={About} />
-      <Route path="/features" exact component={Features} />
+      <Route path="/" exact component={() => <PageWrapper><Main /></PageWrapper>} />
+      <Route path="/about" exact component={() => <PageWrapper><About /></PageWrapper>} />
+      <Route path="/features" exact component={() => <PageWrapper><Features /></PageWrapper>} />
       <Route path="/implicit/callback" component={ImplicitCallback} />
       <PrivateRoute exact={false} path={'/home'} render={Home} />
       <PrivateRoute path={'/app'} render={Dashboard} />
     </Security>
-</Router>
+  </Router>
 )
 
 export default AppRouter;
