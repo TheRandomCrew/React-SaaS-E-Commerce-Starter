@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// Font, change it here: https://github.com/KyleAMathews/typefaces
 import 'typeface-clear-sans';
 import * as serviceWorker from './util/serviceWorker';
 import AppRouter from './router/router';

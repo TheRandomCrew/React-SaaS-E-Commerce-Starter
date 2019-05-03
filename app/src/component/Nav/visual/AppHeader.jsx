@@ -2,8 +2,9 @@ import React from 'react'
 import { Box, Button, ResponsiveContext } from 'grommet';
 import { Login, Logout, Menu } from 'grommet-icons'
 import { StyledLink } from '../style/components';
+import Logo from '../../Logo/Logo';
 
-function AppHeader({toggle, authenticated, user, auth }) {
+function AppHeader({ toggle, authenticated, user, auth }) {
     const [given, setGiven] = React.useState('');
 
     React.useEffect(() => {
@@ -28,14 +29,16 @@ function AppHeader({toggle, authenticated, user, auth }) {
                                 align='center'
                                 justify='evenly'
                             >
-                                <Box>LOGO</Box>
+                                <Logo />
                                 <StyledLink to='/about'>About</StyledLink>
                                 <StyledLink to='/features'>Features</StyledLink>
                             </Box>
                         )}
             </ResponsiveContext.Consumer>
             {authenticated !== null && <Box
-                fill
+                margin={{vertical:'0'}}
+                pad='xsmall'
+                fill='vertical'
                 direction='row'
                 align='center'
                 justify='end'

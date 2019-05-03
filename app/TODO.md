@@ -81,3 +81,6 @@ eres:
     + ecwid o mailchimp por ti
     + pequenos cambios o updates por ti
     + donacion
+
+# Apply submodules
+https://git-scm.com/book/en/v2/Git-Tools-Submodules 

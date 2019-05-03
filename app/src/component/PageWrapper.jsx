@@ -21,7 +21,8 @@ const PageWrapper = withAuth(({ auth, children=undefined }) => {
                     tag='header'
                     direction='row'
                     background='brand'
-                    pad={{ left: 'medium', right: 'small', vertical: 'small' }}
+                    pad={{ left: 'medium', right: 'small', vertical: '0' }}
+                    margin={{vertical:'0'}}
                 >
                     <AppHeader 
                         toggle={toggle}
