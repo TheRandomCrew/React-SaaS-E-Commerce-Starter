@@ -8,19 +8,19 @@ const SocialMedia = () => (
       target="_blank"
       a11yTitle="Visit our site!"
       href="http://root-code.cf/"
-      icon={<PersonalComputer color="brand" size="medium" />}
+      icon={<PersonalComputer color="accent-2" size="medium" />}
     />
     <Anchor
       target="_blank"
       a11yTitle="Chat with us on Facebook"
       href="https://www.facebook.com/rootsCodeSoftware/"
-      icon={<FacebookOption color="brand" size="medium" />}
+      icon={<FacebookOption color="accent-2" size="medium" />}
     />
     <Anchor
       target="_blank"
       a11yTitle="Share feedback on Github"
       href="https://github.com/root-code-software/"
-      icon={<Github color="brand" size="medium" />}
+      icon={<Github color="accent-2" size="medium" />}
     />
   </Box>
 );

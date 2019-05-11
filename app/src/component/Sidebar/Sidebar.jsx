@@ -3,7 +3,7 @@ import { Box, Layer, Button } from 'grommet';
 import { Close } from 'grommet-icons'
 import { StyledLink } from '../Nav/style/components';
 
-const Sidebar = ({toggle, sidebar }) => (
+const Sidebar = ({ toggle, sidebar }) => (
     <>
         {sidebar && <Layer position='left' full='vertical' modal={false} plain={true}>
             <Box background='brand' fill='vertical'>
@@ -15,6 +15,9 @@ const Sidebar = ({toggle, sidebar }) => (
                         color='status-critical'
                     />
                 </Box>
+                <StyledLink to='/'>
+                    Saas
+                </StyledLink>
                 {['about', 'features'].map(name => (
                     <Button
                         key={name}

@@ -51,7 +51,10 @@ export const theme = deepMerge(grommet, {
     }
   },
   button: {
-    color: "white",
+    color: {
+      light: 'rgba(f,f,f,0.9)',
+      dark: 'rgba(0, 0, 0, 0.87)'
+    },
     border: {
       width: '1px',
       radius: '4px',

@@ -12,6 +12,7 @@ import {
 } from "grommet";
 import { SocialMedia } from '../Social/Social';
 import Logo from '../Logo/Logo';
+import { StyledLink } from '../Nav/style/components';
 
 const Footer = ({ ...rest }) => (
     <ResponsiveContext.Consumer>
@@ -62,16 +63,18 @@ const Footer = ({ ...rest }) => (
                     <TableBody>
                         <TableRow>
                             <TableCell scope="row">
-                                App home
+                                <StyledLink to='/'>App Home</StyledLink>
                             </TableCell>
-                            <TableCell>terms</TableCell>
+                            <TableCell>
+                                terms
+                            </TableCell>
                             <TableCell>
                                 <Anchor href='http://root-code.cf/' label='site' />
                             </TableCell>
                         </TableRow>
                         <TableRow>
                             <TableCell scope="row">
-                                features
+                                <StyledLink to='/features'>features</StyledLink>
                             </TableCell>
                             <TableCell>privacy</TableCell>
                             <TableCell>
@@ -80,7 +83,7 @@ const Footer = ({ ...rest }) => (
                         </TableRow>
                         <TableRow>
                             <TableCell scope="row">
-                                Repository
+                                <Anchor href='https://github.com/Israel-Laguan/React-SaaS-E-Commerce-Starter' label='Repository' />
                             </TableCell>
                             <TableCell>license</TableCell>
                             <TableCell>

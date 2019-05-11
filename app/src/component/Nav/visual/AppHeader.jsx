@@ -18,10 +18,20 @@ function AppHeader({ toggle, authenticated, user, auth }) {
             <ResponsiveContext.Consumer>
                 {responsive =>
                     responsive === "small" ? (
-                        <Button
-                            onClick={toggle}
-                            icon={<Menu />}
-                        />
+                        <Box
+                            fill
+                            direction='row'
+                            align='center'
+                            justify='start'
+                        >
+                            <Button
+                                onClick={toggle}
+                                icon={<Menu />}
+                            />
+                            <StyledLink to='/'>
+                                Saas
+                            </StyledLink>
+                        </Box>
                     ) : (
                             <Box
                                 fill
@@ -29,14 +39,16 @@ function AppHeader({ toggle, authenticated, user, auth }) {
                                 align='center'
                                 justify='evenly'
                             >
-                                <Logo />
+                                <StyledLink to='/'>
+                                    <Logo />
+                                </StyledLink>
                                 <StyledLink to='/about'>About</StyledLink>
                                 <StyledLink to='/features'>Features</StyledLink>
                             </Box>
                         )}
             </ResponsiveContext.Consumer>
             {authenticated !== null && <Box
-                margin={{vertical:'0'}}
+                margin={{ vertical: '0' }}
                 pad='xsmall'
                 fill='vertical'
                 direction='row'
