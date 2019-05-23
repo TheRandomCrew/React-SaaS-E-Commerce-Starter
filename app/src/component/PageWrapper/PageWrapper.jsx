@@ -6,6 +6,7 @@ import { theme } from '../../style/globalTheme';
 import { Nav } from '../Nav';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
+// import { v1 } from '../../style/v1';
 
 const PageWrapper = withAuth(({ auth, children = undefined }) => {
     const [themeID, setThemeID] = React.useState('default')

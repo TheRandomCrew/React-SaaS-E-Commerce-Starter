@@ -55,7 +55,11 @@ function AppHeader({ toggle, authenticated, user, auth }) {
                 align='center'
                 justify='end'
             >
-                {authenticated && <StyledLink to='/app'>{given + ' Dashboard'}</StyledLink>}
+                {
+                    authenticated && <StyledLink to='/app'>
+                    {given + ' Dashboard'}
+                    </StyledLink>
+                    }
                 <Button
                     primary
                     color='accent-3'

@@ -3,14 +3,13 @@ import { Heading, Button,  MaskedInput, TextInput } from "grommet";
 
 const ContactUs = () => (
     <div>
-        <code>Contact us</code>
         <Heading level={3} >
             Want some special feature or something more of your style?
         </Heading>
         Some image
         <MaskedInput placeholder='Your email' />
         <TextInput placeholder='Your Message' />
-        <Button label='Contact Us' type='submit' />
+        <Button label='Contact Us' type='submit' primary/>
     </div>
 )
 

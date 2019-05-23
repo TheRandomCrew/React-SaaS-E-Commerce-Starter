@@ -34,7 +34,7 @@ const Footer = ({ ...rest }) => (
                         <Logo />
                         {size !== "small" && size !== "xsmall" && (
                             <Text weight="bold" size="large" color='violet'>
-                                SaaS Starter
+                                React SaaS Starter
                             </Text>
                         )}
                     </Box>
