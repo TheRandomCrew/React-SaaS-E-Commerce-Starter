@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ProfileContainer = styled.div`
+  .rc-dropdown {}
   max-width: 1010px;
   width: 100%;
   margin: 20px auto;
