@@ -22,8 +22,6 @@
     
 My approach to an easy de customize E-Commerce solution with Auth, messages, Store and payments, using React, Styled Components and Orbit (optional)
     <br />
-	  🖊️
-    <a href="https://">Read the article</a>
     🐞
     <a href="https://github.com/Israel-Laguan/React-SaaS-E-Commerce-Starter/issues">Report a Bug</a>
     🙋‍♂️
