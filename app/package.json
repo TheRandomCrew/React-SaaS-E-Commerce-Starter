@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@okta/okta-react": "^1.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "grommet": "^2.6.6",
     "grommet-icons": "^4.2.0",
     "react": "^16.8.6",
